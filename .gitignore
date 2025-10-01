@@ -107,4 +107,3 @@ data/covmat.dat
 
 # mypy
 .mypy_cache/
-data/
