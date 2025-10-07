@@ -146,7 +146,15 @@ class CamspecMFLike(InstallableLikelihood):
 
 		return new_covmat
 	
-	
+	def get_requirements(self):
+		return {
+			'Cl' : {
+				'tt' : self.tt_lmax,
+				'te' : self.tt_lmax,
+				'ee' : self.tt_lmax
+			}
+		}
+
 	def get_model(self, cl, **params_values):
 		self.log.debug('Start calculating model.')
 		l0 = int(2 - cl['ell'][0])

@@ -3,7 +3,7 @@ stop_at_error: true
 
 
 lmax_win: 2500
-
+tt_lmax: 2500
 
 # CAMSPEC NPIPE FILES
 covfile: like_NPIPE_12.6_unified_cov.bin
